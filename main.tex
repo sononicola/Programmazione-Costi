@@ -1,0 +1,84 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage{geometry}\geometry{a4paper,top=3.5cm,bottom=3.5cm,%
+left=2.5cm,right=2.5cm,heightrounded,bindingoffset=0mm}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{subfig}
+\usepackage{amsmath,amsfonts,amssymb,braket,mathrsfs,eurosym}
+\usepackage{float}
+\usepackage{tabularx,booktabs,multirow}
+\usepackage{lscape}
+\usepackage{longtable}
+\usepackage[output-decimal-marker={,}]{siunitx}
+\usepackage{pdfpages}
+%\usepackage{minipage}
+\usepackage{tikz}
+\usepackage{xspace}% per lo spazio intelligente
+\newcommand{\e}{\`E\xspace}  %E'
+\newcommand{\teuro}{\text{\euro}}%il simbolo dell'euro dentro le formula matematiche diventa "e". con \text diventa €
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\usepackage{caption}
+\captionsetup{tableposition=top,figureposition=bottom,font=small}\captionsetup{format=hang,labelfont={bf}}
+\usepackage{plain}
+\usepackage{titlesec} % per formato custom dei titoli dei capitoli
+\usepackage{hyperref}
+%\usepackage[style=numeric-comp]{biblatex}
+\usepackage[autostyle,italian=guillemets]{csquotes}
+\usepackage[style=numeric,backend=biber]{biblatex}
+\addbibresource{Bibliografia.bib}
+\begin{document}
+\tableofcontents
+%Tabelle e figure sulla stessa pagina:
+%Le aggiunge all'indice. phantomsection serve per non far casini con hyperref
+\clearpage
+\begingroup
+   %\let\cleardoublepage\relax  % book
+    \let\clearpage\relax        % report
+        \listoftables
+        \phantomsection
+        \addcontentsline{toc}{chapter}{Elenco delle tabelle}
+        %
+        \listoffigures
+        \phantomsection
+        \addcontentsline{toc}{chapter}{Elenco delle figure}
+\endgroup
+%\thispagestyle{empty}
+% redefinizione del formato del titolo del capitolo
+      % da formato
+      %   Capitolo X
+      %   Titolo capitolo
+      % a formato
+      %   X   Titolo capitolo 
+	\titleformat{\chapter}
+        {\normalfont\Huge\bfseries}{\thechapter}{1em}{}
+	\titlespacing*{\chapter}{0pt}{0in}{0.02in}
+	\titlespacing*{\section}{0pt}{0.2in}{0.02in}
+	\titlespacing*{\subsection}{0pt}{0.10in}{0.02in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    
+%bibliografia
+%\nocite{mcgraw}%senza un preciso punto nel testo
+%\bibliographystyle{plain}
+\cleardoublepage
+\phantomsection
+\printbibliography[heading=bibintoc]
+%Capitoli introduttivi
+    \input{chapters/aStatoZeroEDescrizioneIniziale.tex}
+%Capitoli analisi pareti esterne
+    \input{chapters/EsterneIntro.tex}
+        \input{chapters/EsterneStruttura.tex}
+        \input{chapters/EsterneIsolante.tex}
+        \input{chapters/EsterneRivestimento.tex}
+        \input{chapters/EsterneConclusione.tex}
+%Capitoli analisi intero edificio
+    \input{chapters/TuttoAnalisi.tex}
+%Capitoli considerazioni sui vincitore e conclusioni
+    \input{chapters/ZConsiderazioniFinali.tex}
+    \input{chapters/ZZallegati.tex}
+\end{document}
+
+

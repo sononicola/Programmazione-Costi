@@ -1,0 +1,53 @@
+\section{Isolante}
+Sono stati analizzati 4 isolanti con caratteristiche e soprattutto con costi molto differenti.
+\begin{table}[H]
+\caption{Elenco degli isolanti presi in considerazione e descrizione sintetica delle loro caratteristiche.}
+\centering
+\begin{tabularx}{\textwidth}{rXX}
+    \toprule
+        \textbf{A} & \textbf{Rockwool VENTIROCK Duo} & Pannello rigido in lana di roccia non rivestito a doppia densità. 
+        Adatto sia a isolamento termico che acustico, con ottimo comportamento al fuoco. 
+        Ottima stabilità dimensionale e prestazionale. \\\midrule
+        \textbf{B} & \textbf{Ecofine AEROGELHP} & Pannello termoisolante in aerogel con matrice di supporto in fibra minerale, ininfiammabile, permeabile al vapore, senza rivestimento. 
+        Ottimo comportamento al fuoco. 
+        Indicato in generale in tutte le applicazioni in cui si desideri o si sia vincolati a contenere lo spessore.\\\midrule
+        \textbf{C} & \textbf{UNILIN uTherm PIR K} & Panello isolante PIR ad alte prestazioni con un rivestimento multistrato di carta metallizzata su entrambi i lati. 
+        Molto leggero e facile da posare.\\\midrule
+        \textbf{D} & \textbf{Stiferite Class SK} & Pannello sandwich costituito da un componente isolante in schiuma polyiso, rivestito su entrambe le facce con velo vetro saturato.\\
+    \bottomrule
+\end{tabularx}
+\end{table}
+Per trovare l'isolante più conveniente è stato fissato come parametro la resistenza termica dell'isolante a spessore maggiore, ovvero l'isolante A spesso \SI{14}{\centi\metre}.
+\[R_A = \frac{s}{\lambda}=\frac{\SI{0.14}{m}}{\SI{0.035}{W/mK}}=\SI{4}{m^2K\per W}\]
+Con questo parametro sono stati trovati gli spessori degli altri isolanti che permettessero di equiparare (tenendo conto degli spessori commerciali) la resistenza. 
+Ottenendo così i dati di tabella \ref{tab:Isolanti}.
+\begin{table}[htb]
+\centering
+\caption{Spessori isolanti a parità di resistenza termica voluta pari a \SI{4}{m^2K/W}. Il prezzo unitario si riferisce al costo del solo materiale, senza trasporti e installazione.}
+\label{tab:Isolanti}
+\begin{tabular}{@{}rrrr@{}}
+\toprule
+  & Conducibilità & Spessore & Prezzo unitario \\ 
+  & W/mK          & m        & euro/mq            \\ \midrule
+A & 0,035         & 0,14     & 19,00           \\
+B & 0,015         & 0,06     & 362,00          \\
+C & 0,022         & 0,10     & 51,00           \\
+D & 0,025         & 0,10     & 29,00           \\ \bottomrule
+\end{tabular}%
+\end{table}
+
+Per decretare quale avesse il costo maggiore è stata presa in considerazione la superficie risparmiata grazie allo spessore minore degli isolanti B, C, D.
+\e stato analizzato sia la vendita con un  prezzo di vendita di \SI{3000}{\teuro / \square\metre}, che di affitto di \SI{10.41}{\teuro /\square\metre mese }. Valori che sono stati presi analizzando i prezzi di mercato forniti dall'Agenzia delle Entrate a Trento.
+\input{img/ISO_confrontoCosti.tex}
+
+Nella tabella \ref{ISOvincitore} si sono riportati i confronti dei quattro isolanti riportando i valori rispetto all'isolante peggiore.
+Valori che portano a dire che l'isolante vincitore è il quarto e permette di risparmiare \SI{16132.00}{\teuro} nel caso delle cinque villette a schiere di due piani.
+Sono stati riportati -- per pura speculazione -- anche i dati relativi ad una possibile abitazione di 10 piani.
+\e evidente il maggior risparmio con la soluzione D.
+
+Nel confronto non sono stati tenuti in considerazione né il trasporto né il possibile guadagno dovuto al minor spazio occupato in cantiere dall'isolante.
+Si è supposto infatti che l'origine delle fabbriche delle aziende produttrici fosse in una posizione tale da non variare significativamente il costo del trasporto. 
+\e anche vero che l'isolante B -- quello con le maggiori prestazioni -- potrebbe richiedere un viaggio in meno, ma l'enorme differenza di costo intrinseco del materiale fa sì che ciò non incida.
+
+Non sono stati presi in considerazione neanche la manutenzione né la tempistica di posa in opera, in quanto si è supposto fosse uguale per tutte le tipologie.
+%%%
