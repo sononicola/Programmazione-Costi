@@ -20,6 +20,9 @@ left=2.5cm,right=2.5cm,heightrounded,bindingoffset=0mm}
 \newcommand{\e}{\`E\xspace}  %E'
 \newcommand{\teuro}{\text{\euro}}%il simbolo dell'euro dentro le formula matematiche diventa "e". con \text diventa €
 \newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\omissis}{[\textellipsis\unkern]} %puntini di sospensione
+\usepackage{quoting}
+\quotingsetup{font=small}
 \usepackage{caption}
 \captionsetup{tableposition=top,figureposition=bottom,font=small}\captionsetup{format=hang,labelfont={bf}}
 \usepackage{plain}
@@ -27,7 +30,9 @@ left=2.5cm,right=2.5cm,heightrounded,bindingoffset=0mm}
 \usepackage{hyperref}
 %\usepackage[style=numeric-comp]{biblatex}
 \usepackage[autostyle,italian=guillemets]{csquotes}
-\usepackage[style=numeric,backend=biber]{biblatex}
+%numeric: la bibliografia ha i numeri
+%backref: indica nella bibliografia le pagine in cui ci sono le citazioni
+\usepackage[style=numeric,backend=biber,backref,hyperref]{biblatex}
 \addbibresource{Bibliografia.bib}
 \begin{document}
 \tableofcontents
