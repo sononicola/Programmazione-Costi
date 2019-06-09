@@ -1,12 +1,22 @@
 %ALLEGATI IN FONDO A TUTTO:
-\chapter{ALLEGATI}
-%\textbf{\Huge ALLEGATI:}
+\appendix
+\renewcommand{\thechapter}{Allegati} %Toglie A,B,C delle appendici del TOC sostituendolo con "Allegati"
+%Funziona solo perché c'è solo un appendice sennò non avrebbe senso
+\titleformat{\chapter}%toglie A, B, C e sposta il nome a sinistra
+        {\normalfont\Huge\bfseries}{}{0em}{} 
+\chapter[]{Allegati} %Nell'indice non ha nome []
 \begin{enumerate}
     \item Piante edificio
     \item Zonizzazione dello stato zero
     \item WBS stato zero
     \item Computo metrico estimativo struttura perimetrale
+    \item Computo metrico estimativo struttura pareti interne e solai intermedi e di copertura
 \end{enumerate}
+%Piante edificio:
+%I pdf originali sono in A3 a scala 1:50 in realtà. Ora è diventato in 1:100 A4
+\label{piante}
+\includepdf[pages={1},pagecommand={\thispagestyle{plain}}]{img/PiantaTerraA3scala50.pdf}
+\includepdf[pages={1},pagecommand={\thispagestyle{plain}}]{img/PiantaPrimoA3scala50.pdf}
 %Zona ubicazione edificio
 \label{Edificio}
 \includepdf[pages={1,2},pagecommand={\thispagestyle{plain}}]{img/Zonizzazione1.pdf}
@@ -17,3 +27,8 @@
 %Conputo strutture perimetrali:
 \label{STRUTcostoMateriale}
 \includepdf[pages={1-3},pagecommand={\thispagestyle{plain}}]{img/STRUTcostoMateriale.pdf}
+%Conputo strutture interne e solai:
+\label{STRUTMuraturaTotaleIntESol}
+\includepdf[pages={1},pagecommand={\thispagestyle{plain}}]{img/STRUTMuraturaTotaleIntESol.pdf}
+%
+\includepdf[pages={1},pagecommand={\thispagestyle{plain}}]{img/STRUTXLAMTotaleIntESol.pdf}
