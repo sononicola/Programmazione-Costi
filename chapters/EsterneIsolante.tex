@@ -1,7 +1,7 @@
 \section{Isolante}
-Sono stati analizzati 4 isolanti con caratteristiche e soprattutto con costi molto differenti.
-\begin{table}[H]
+\begin{table}[htbp]
 \caption{Elenco degli isolanti presi in considerazione e descrizione sintetica delle loro caratteristiche.}
+\label{MaterialiISO}
 \centering
 \begin{tabularx}{\textwidth}{rXX}
     \toprule
@@ -10,16 +10,16 @@ Sono stati analizzati 4 isolanti con caratteristiche e soprattutto con costi mol
         Ottima stabilità dimensionale e prestazionale. \\\midrule
         \textbf{B} & \textbf{Ecofine AEROGELHP} & Pannello termoisolante in aerogel con matrice di supporto in fibra minerale, ininfiammabile, permeabile al vapore, senza rivestimento. 
         Ottimo comportamento al fuoco. 
-        Indicato in generale in tutte le applicazioni in cui si desideri o si sia vincolati a contenere lo spessore.\\\midrule
+        Indicato in generale in tutte le applicazioni in cui si desideri o si sia vincolati a contenere lo spessore. O nel caso di ponti termici localizzati.\\\midrule
         \textbf{C} & \textbf{UNILIN uTherm PIR K} & Panello isolante PIR ad alte prestazioni con un rivestimento multistrato di carta metallizzata su entrambi i lati. 
         Molto leggero e facile da posare.\\\midrule
         \textbf{D} & \textbf{Stiferite Class SK} & Pannello sandwich costituito da un componente isolante in schiuma polyiso, rivestito su entrambe le facce con velo vetro saturato.\\
     \bottomrule
 \end{tabularx}
 \end{table}
-Per trovare l'isolante più conveniente è stato fissato come parametro la resistenza termica dell'isolante a spessore maggiore, ovvero l'isolante A spesso \SI{14}{\centi\metre}.
+Passando ora all'analisi degli isolanti riportati in tabella \ref{MaterialiISO}, per trovare quello più conveniente, è stato fissato come parametro la resistenza termica dell'isolante a spessore maggiore, ovvero l'isolante A spesso \SI{14}{\centi\metre}.
 \[R_A = \frac{s}{\lambda}=\frac{\SI{0.14}{m}}{\SI{0.035}{W/mK}}=\SI{4}{m^2K\per W}\]
-Con questo parametro sono stati trovati gli spessori degli altri isolanti che permettessero di equiparare (tenendo conto degli spessori commerciali) la resistenza. 
+Con questo parametro sono stati trovati di conseguenza gli spessori delle altre soluzione che permettessero di equiparare (tenendo in considerazione degli spessori commerciali) la resistenza termica. 
 Ottenendo così i dati di tabella \ref{tab:Isolanti}.
 \begin{table}[htb]
 \centering
@@ -36,18 +36,17 @@ D & 0,025         & 0,10     & 29,00           \\ \bottomrule
 \end{tabular}%
 \end{table}
 
-Per decretare quale avesse il costo maggiore è stata presa in considerazione la superficie risparmiata grazie allo spessore minore degli isolanti B, C, D.
-\e stato analizzato sia la vendita con un  prezzo di vendita di \SI{3000}{\teuro / \square\metre}, che di affitto di \SI{10.41}{\teuro /\square\metre mese }. Valori che sono stati presi analizzando i prezzi di mercato forniti dall'Agenzia delle Entrate a Trento.
+Per decretare quale avesse il costo maggiore è stata presa in considerazione la superficie risparmiata grazie allo spessore minore degli isolanti B, C, D rispetto alla soluzione zero A.
 \input{img/ISO_confrontoCosti.tex}
 
-Nella tabella \ref{ISOvincitore} si sono riportati i confronti dei quattro isolanti riportando i valori rispetto all'isolante peggiore.
-Valori che portano a dire che l'isolante vincitore è il quarto e permette di risparmiare \SI{16132.00}{\teuro} nel caso delle cinque villette a schiere di due piani.
+Nella tabella \ref{ISOvincitore} sono rappresentati i confronti dei quattro isolanti riportando i valori rispetto all'isolante di partenza.
+Valori che portano a dire che l'isolante vincitore è il quarto e che permette di risparmiare \SI{16132.00}{\teuro} nel caso delle cinque villette a schiere di due piani.
 Sono stati riportati -- per pura speculazione -- anche i dati relativi ad una possibile abitazione di 10 piani.
 \e evidente il maggior risparmio con la soluzione D.
 
 Nel confronto non sono stati tenuti in considerazione né il trasporto né il possibile guadagno dovuto al minor spazio occupato in cantiere dall'isolante.
 Si è supposto infatti che l'origine delle fabbriche delle aziende produttrici fosse in una posizione tale da non variare significativamente il costo del trasporto. 
-\e anche vero che l'isolante B -- quello con le maggiori prestazioni -- potrebbe richiedere un viaggio in meno, ma l'enorme differenza di costo intrinseco del materiale fa sì che ciò non incida.
+Non sono stati presi in considerazione neanche la manutenzione né la tempistica di posa in opera, in quanto si è supposto fossero uguali per tutte le tipologie.
 
-Non sono stati presi in considerazione neanche la manutenzione né la tempistica di posa in opera, in quanto si è supposto fosse uguale per tutte le tipologie.
-%%%
+\e anche vero che l'isolante B -- quello con le maggiori prestazioni -- potrebbe richiedere un viaggio in meno, ma l'enorme differenza di costo intrinseco del materiale fa sì che ciò non incida.
+C'è da dire che questo isolante, proprio grazie alle sue ottime caratteristiche, viene utilizzato solitamente nei ponti termici causati ad esempio dai pilastri in calcestruzzo di una struttura a telaio, per tanto il suo costo elevato viene spalmato in una superficie ben minore di quella dell'intero edificio.
