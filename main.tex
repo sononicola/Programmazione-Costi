@@ -28,6 +28,7 @@ left=2.5cm,right=2.5cm,heightrounded,bindingoffset=0mm}
 \usepackage{caption}
 \captionsetup{tableposition=top,figureposition=bottom,font=small}\captionsetup{format=hang,labelfont={bf}}
 \usepackage{plain}
+\usepackage{epsfig}
 \usepackage{titlesec} % per formato custom dei titoli dei capitoli
 \usepackage{hyperref}
 %\usepackage[style=numeric-comp]{biblatex}
@@ -38,7 +39,9 @@ left=2.5cm,right=2.5cm,heightrounded,bindingoffset=0mm}
 \addbibresource{Bibliografia.bib}
 %\usepackage{appendix}
 \begin{document}
+\input{chapters/Titolo.tex}
 \tableofcontents
+\setcounter{page}{1}
 %Tabelle e figure sulla stessa pagina:
 %Le aggiunge all'indice. phantomsection serve per non far casini con hyperref
 \clearpage
