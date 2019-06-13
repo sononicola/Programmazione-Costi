@@ -1,3 +1,9 @@
+## Licenza
+La relazione PDF e i suoi contenuti hanno licenza Attribution-NonCommercial-ShareAlike 4.0 International
+
+Il codice .tex è liberamente riutilizzabile
+
+## Descrizione
 Relazione effettuata per Programmazione Costi e contabilità dei lavori, al terzo anno della laure in ingegneria civile a Trento
 
 Analisi volta a trovare i materiali economicamente più vantaggiosi per la costruzione di pareti e solai di cinque villette a schiera.
